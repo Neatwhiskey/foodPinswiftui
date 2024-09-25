@@ -35,32 +35,44 @@ struct RestaurantListView: View {
 
     //MARK: - Body
     var body: some View {
-        List{
-            ForEach(restaurants.indices, id:\.self) { index in
-                BasicTextImageRow( restaurant: $restaurants[index])
+            NavigationView {
+                List{
+                    ForEach(restaurants.indices, id:\.self) { index in
+                        ZStack(alignment: .leading) {
+                            NavigationLink(destination: RestaurantDetailView(restaurant: restaurants[index])){
+                                EmptyView()
+                            }
+                            .opacity(0)
+                            BasicTextImageRow( restaurant: $restaurants[index])
+                        }
+                        
+                    }
+                        //MARK: - Swipe Action implementation
+                        //            .swipeActions(edge: .leading, allowsFullSwipe: false, content: {
+                        //                Button{
+                        //                    
+                        //                }label: {
+                        //                    Image(systemName: "heart")
+                        //                }
+                        //                .tint(.green)
+                        //                Button{
+                        //                    
+                        //                }label: {
+                        //                    Image(systemName: "square.and.arrow.up")
+                        //                }
+                        //                .tint(.orange)
+                        //            })
+                        //MARK: - Delete implementation
+                    .onDelete(perform: {indexSet in
+                        restaurants.remove(atOffsets: indexSet)})
+                    
+                    .listRowSeparator(.hidden)
+                }
+                .listStyle(.plain)
+                .navigationTitle("FoodPin")
+                .navigationBarTitleDisplayMode(.automatic)
             }
-            //MARK: - Swipe Action implementation
-//            .swipeActions(edge: .leading, allowsFullSwipe: false, content: {
-//                Button{
-//                    
-//                }label: {
-//                    Image(systemName: "heart")
-//                }
-//                .tint(.green)
-//                Button{
-//                    
-//                }label: {
-//                    Image(systemName: "square.and.arrow.up")
-//                }
-//                .tint(.orange)
-//            })
-            //MARK: - Delete implementation
-            .onDelete(perform: {indexSet in
-                restaurants.remove(atOffsets: indexSet)})
-        
-            .listRowSeparator(.hidden)
-        }
-        .listStyle(.plain)
+            .accentColor(.white)
     }
 }
 
