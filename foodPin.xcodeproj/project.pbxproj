@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		131F9AFF2CA3817A00F41645 /* RestaurantDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 131F9AFE2CA3817A00F41645 /* RestaurantDetailView.swift */; };
 		13CF2C782C905E2B00EE5E96 /* Restaurant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13CF2C772C905E2B00EE5E96 /* Restaurant.swift */; };
 		13DEA3BF2CA2D0D5008AA6E7 /* AvtivityView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13DEA3BE2CA2D0D5008AA6E7 /* AvtivityView.swift */; };
 		13F8D6A92C7349D400E3A873 /* foodPinApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13F8D6A82C7349D400E3A873 /* foodPinApp.swift */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		131F9AFE2CA3817A00F41645 /* RestaurantDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantDetailView.swift; sourceTree = "<group>"; };
 		13CF2C772C905E2B00EE5E96 /* Restaurant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Restaurant.swift; sourceTree = "<group>"; };
 		13DEA3BE2CA2D0D5008AA6E7 /* AvtivityView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvtivityView.swift; sourceTree = "<group>"; };
 		13F8D6A52C7349D400E3A873 /* foodPin.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = foodPin.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -49,6 +51,7 @@
 			children = (
 				13F8D6AA2C7349D400E3A873 /* RestaurantListView.swift */,
 				13DEA3BE2CA2D0D5008AA6E7 /* AvtivityView.swift */,
+				131F9AFE2CA3817A00F41645 /* RestaurantDetailView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -160,6 +163,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				13DEA3BF2CA2D0D5008AA6E7 /* AvtivityView.swift in Sources */,
+				131F9AFF2CA3817A00F41645 /* RestaurantDetailView.swift in Sources */,
 				13CF2C782C905E2B00EE5E96 /* Restaurant.swift in Sources */,
 				13F8D6AB2C7349D400E3A873 /* RestaurantListView.swift in Sources */,
 				13F8D6A92C7349D400E3A873 /* foodPinApp.swift in Sources */,
