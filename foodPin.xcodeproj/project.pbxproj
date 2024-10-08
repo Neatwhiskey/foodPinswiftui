@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		131C59062CB5160E00B8D605 /* UIColor+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 131C59052CB5160600B8D605 /* UIColor+Ext.swift */; };
 		131F9AFF2CA3817A00F41645 /* RestaurantDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 131F9AFE2CA3817A00F41645 /* RestaurantDetailView.swift */; };
 		131F9B042CA3A9EC00F41645 /* Nunito-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 131F9B032CA3A9EC00F41645 /* Nunito-Regular.ttf */; };
 		131F9B052CA3A9EC00F41645 /* Nunito-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 131F9B022CA3A9EC00F41645 /* Nunito-Bold.ttf */; };
@@ -19,6 +20,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		131C59052CB5160600B8D605 /* UIColor+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Ext.swift"; sourceTree = "<group>"; };
 		131F9AFE2CA3817A00F41645 /* RestaurantDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantDetailView.swift; sourceTree = "<group>"; };
 		131F9B022CA3A9EC00F41645 /* Nunito-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Nunito-Bold.ttf"; sourceTree = "<group>"; };
 		131F9B032CA3A9EC00F41645 /* Nunito-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Nunito-Regular.ttf"; sourceTree = "<group>"; };
@@ -43,6 +45,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		131C59042CB515EE00B8D605 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				131C59052CB5160600B8D605 /* UIColor+Ext.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		131F9B002CA3A94000F41645 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
@@ -97,6 +107,7 @@
 		13F8D6A72C7349D400E3A873 /* foodPin */ = {
 			isa = PBXGroup;
 			children = (
+				131C59042CB515EE00B8D605 /* Extensions */,
 				131F9B062CA3B11B00F41645 /* Info.plist */,
 				131F9B002CA3A94000F41645 /* Resources */,
 				13F8D6A82C7349D400E3A873 /* foodPinApp.swift */,
@@ -188,6 +199,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				131C59062CB5160E00B8D605 /* UIColor+Ext.swift in Sources */,
 				13DEA3BF2CA2D0D5008AA6E7 /* AvtivityView.swift in Sources */,
 				131F9AFF2CA3817A00F41645 /* RestaurantDetailView.swift in Sources */,
 				13CF2C782C905E2B00EE5E96 /* Restaurant.swift in Sources */,
